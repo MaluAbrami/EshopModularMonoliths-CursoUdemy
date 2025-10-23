@@ -1,4 +1,4 @@
-﻿namespace Catalog.Products.Features.Dtos
+﻿namespace Catalog.Products.Dtos
 {
     public record ProductDto(
         Guid Id,

@@ -1,4 +1,6 @@
-﻿namespace Catalog.Products.Features.GetProducts
+﻿using Catalog.Products.Dtos;
+
+namespace Catalog.Products.Features.GetProducts
 {
     public record GetProductsQuery() : IQuery<GetProductsResult>;
 
