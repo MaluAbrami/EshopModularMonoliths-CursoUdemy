@@ -1,14 +1,6 @@
-using Carter;
-
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddCarter(configurator: config =>
-{
-    var catalogModules = typeof(CatalogModule).Assembly.GetTypes()
-        .Where(t => t.IsAssignableTo(typeof(ICarterModule))).ToArray();
-
-    config.WithModules(catalogModules);
-});
+builder.Services.AddCarterWithAssemblies(typeof(CatalogModule).Assembly);
 
 builder.Services
     .AddCatalogModule(builder.Configuration)
