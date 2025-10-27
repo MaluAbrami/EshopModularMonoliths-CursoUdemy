@@ -1,9 +1,4 @@
-﻿using Carter;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing;
-
-namespace Catalog.Products.Features.CreateProduct
+﻿namespace Catalog.Products.Features.CreateProduct
 {
     public record CreateProductRequest(ProductDto Product);
 
