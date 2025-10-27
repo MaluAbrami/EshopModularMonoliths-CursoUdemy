@@ -22,7 +22,7 @@
 
             if (product is null)
             {
-                throw new Exception($"Product not found: {command.Product.Id}");
+                throw new ProductNotFoundException(command.Product.Id);
             }
 
             UpdateProductWithNewValue(product, command.Product);
